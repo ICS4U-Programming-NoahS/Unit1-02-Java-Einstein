@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
 * The Einstein program asks the user to enter the mass of an object.
 * It then sees how much energy could be released from that object.
-* It also includes a loop, try ... catch and is rounded to 3 decimal places.
+* It also includes a loop and try ... catch.
 
 *
 * @author Noah Smith
@@ -60,9 +60,8 @@ final class Einstein {
                     // Calculate the energy
                     double objEnergy = objMass * Math.pow(SPEED_OF_LIGHT, 2);
 
-                    // Display the energy, rounded to 3 decimal places
-                    System.out.println(
-                            String.format("%.3f", objEnergy)
+                    // Display the energy, in scientific notation
+                    System.out.println(objEnergy
                             + "J of energy can be released from your object. "
                         );
 
